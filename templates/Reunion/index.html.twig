@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ReunionController!{% endblock %}
+
+{% block body %}
+<style>
+    .listR{ margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+  
+</style>
+
+<div class="listR">
+    <h1> liste des reunion</h1>
+    {% for Reunion in Reunion %}
+       {{ Reunion.getRTitreReunion() }}
+    {% endfor %}
+</div>
+{% endblock %}

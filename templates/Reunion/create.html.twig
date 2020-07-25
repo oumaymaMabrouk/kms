@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ReunionController!{% endblock %}
+
+{% block body %}
+ <h1> create reunion </h1>
+ <form method="POST"> 
+<div>
+ <label for=""> titre Reunion </label>
+ <input type="text" id="RTitreReunion" name="RTitreReunion">
+ </div> 
+
+ <div>
+ <label for=""> type Reunion</label>
+ <input type="number" id="RtldTypeReunion" name="RtldTypeReunion">
+ </div> 
+ 
+ <div>
+ <label for=""> Etat Reunion</label>
+ <input type="number" id="ReldEtatReunion" name="ReldEtatReunion">
+ </div> 
+ 
+ <div>
+ <label for=""> liste Participant</label>
+ <input type="text" id="RpldParticipentReunion" name="RpldParticipentReunion">
+ </div> 
+ 
+ <div>
+ <label for=""> Commentaire</label>
+ <input type="text" id="Rcommentaire" name="Rcommentaire">
+ </div> 
+ 
+ <div>
+ <label for=""> Date Prevue </label>
+ <input type="date" id="RDatePrevue" name="RDatePrevue">
+ </div> 
+ 
+ <div>
+ <label for=""> Heure Prevue </label>
+ <input type="heure" id="RHeureRrevu" name="RHeureRrevu">
+ </div> 
+ 
+ <div>
+ <label for=""> Duree Prevue</label>
+ <input type="text" id="RDureePrevu" name="RDureePrevu">
+ </div> 
+ 
+ <div>
+ <label for=""> salle </label>
+ <input type="text" id="Rlieux" name="Rlieux">
+ </div> 
+ 
+ <div>
+ <label for=""> Responsable Reunion </label>
+ <input type="text" id="RResReunion" name="RResReunion">
+ </div> 
+ 
+ <div>
+ <label for=""> responsable PV</label>
+ <input type="text" id="RResPv" name="RResPv">
+ </div> 
+ 
+ <div>
+ <label for=""> responsable verification</label>
+ <input type="text" id="RResVerif" name="RResVerif">
+ </div> 
+ 
+ <input type="submit" value="create reunion">
+ 
+ 
+ </form> 
+{% endblock %}
